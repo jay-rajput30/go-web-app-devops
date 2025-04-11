@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
-    paths:
+    paths-ignore:
       - "README.md"
       - "heml/**"
+      - 'k8s/**'
 
 jobs:
   build:
@@ -63,7 +64,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app:${{github.run_id}}
-          
+
   update-newtag-in-helm-chart:
     runs-on: ubuntu-latest
 

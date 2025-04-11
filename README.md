@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# go-web-app-devops
+devopsifying a go web app with CI CD implementation
+
 # Go Web Application
 
 This is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
@@ -19,6 +21,4 @@ The server will start on port 8080. You can access it by navigating to `http://l
 
 
 =======
-# go-web-app-devops
-devopsifying a go web app with CI CD implementation
->>>>>>> aa9cb9f6ab436f408f9d2e67216c7a7a1da1752a
+
